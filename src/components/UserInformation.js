@@ -1,24 +1,25 @@
 import { useEffect } from "react";
 
-let renderCount = 1;
+let renderCount = 1; // tracks how many times the page was re-rendered
 
-const Component = ({ data }) => {
+// notifies the user if they entered the correct age and displays the rendercount
+const UserInformation = ({ age }) => {
   useEffect(() => renderCount++);
 
-  if (!data.age) return null;
+  if (!age) return null;
 
   return (
     <div>
-      {data.age < 18 ? (
+      {age < 18 ? (
         <span style={{ color: "red" }}>
           You are too young to be our employee
         </span>
       ) : (
-        <span style={{}}>You are old enough :)</span>
+        <span style={{ color: "blue" }}>You are old enough :)</span>
       )}
       <small> ({renderCount})</small>
     </div>
   );
 };
 
-export default Component;
+export default UserInformation;
