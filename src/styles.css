@@ -1,4 +1,32 @@
+/* main css file */
 .App {
   font-family: sans-serif;
   text-align: center;
+}
+
+.user_form {
+  background: #2ab92a;
+  padding: 20px;
+}
+
+.list_wrap {
+  background: yellow;
+  margin-top: 5px;
+}
+
+.list_wrap .list_h {
+  margin: 0;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.list_wrap ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header {
+  background: grey;
+  padding: 20px;
+  margin-bottom: 5;
 }
